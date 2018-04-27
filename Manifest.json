@@ -1,0 +1,38 @@
+{
+    "$schema": "https://gallery.azure.com/schemas/2014-09-01/manifest.json#",
+    "name": "IoTEdge",
+    "version": "1.0.0",
+    "publisher": "Microsoft",
+    "displayName": "IoT Edge",
+    "publisherDisplayName": "Microsoft Corporation",
+    "publisherLegalName": "Microsoft Corporation",
+    "summary": "ms-resource:summary",
+	"longSummary": "ms-resource:summary",
+	"description": "ms-resource:description",
+    "uiDefinition": {
+        "path": "UIDefinition.json"
+    },
+    "artifacts": [
+        {
+            "name": "DefaultTemplate",
+            "type": "Template",
+            "path": "DeploymentTemplates\\DefaultTemplate.json",
+            "isDefault": true
+        },
+        {
+          "name": "createuidefinition",
+          "type": "Template",
+          "path": "DeploymentTemplates\\CreateUIDefinition.json",
+          "isDefault": false
+        }
+    ],
+    "icons": {
+        "small": "Icons\\Small.png",
+        "medium": "Icons\\Medium.png",
+        "large": "Icons\\Large.png",
+        "wide": "Icons\\Wide.png"
+    },
+    "categories": [
+        "Devices"
+    ]
+}

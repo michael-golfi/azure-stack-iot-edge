@@ -1,0 +1,6 @@
+{
+  "displayName": "Azure IoT Edge",
+  "publisherDisplayName": "Microsoft",
+  "summary": "Azure IoT Edge for hosting compute edge for upstream data processing. ",
+  "description": "<p>The Azure IoT Edge allows consumers to handle data processing and aggregation operations on-premises with upstream data capabilities. The deployment will self-register with provided Azure IoT Hub and forward data upstream based on designated configuration."
+}

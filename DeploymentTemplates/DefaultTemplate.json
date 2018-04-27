@@ -1,0 +1,46 @@
+{
+"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+"contentVersion": "1.0.0.0",
+"parameters": {
+	"name": {
+		"type": "string"
+	},
+	"port": {
+		"type": "string"
+	},
+	"instanceName": {
+		"type": "string"
+	},
+	"location": {
+		"type": "string"
+	},
+	"totalSpaceMB": {
+		"type": "int"
+	},
+	"alwaysOnEnabled": {
+		"type": "bool"
+	},
+	"userName": {
+		"type": "string"
+	},
+	"password": {
+		"type": "securestring"
+	},
+	"skuName": {
+		"type": "string"
+	}
+},
+"resources": [
+	{
+		"apiVersion": "2017-08-28",
+		"type": "Microsoft.Devices/IotEdges",
+		"name": "[parameters('name')]",
+		"location": "[parameters('location')]",
+		"properties": {
+			"name": "[parameters('name')]",
+			"iotHubConnectionString": "[parameters('iotHubConnectionString')]",
+			"skuName": "[parameters('skuName')]"
+		}
+	}
+]
+}
